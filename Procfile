@@ -1,1 +1,1 @@
-web: python hosting.py
+web: gunicorn manage:app
