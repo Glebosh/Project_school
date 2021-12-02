@@ -1,0 +1,3353 @@
+<head><meta HTTP-EQUIV='Content-type' CONTENT='text/html; charset=utf-8'><style>@charset "UTF-8";.table.table-md>tbody>tr>th,.table.table-md>thead>tr>th,.table>tbody>tr>td,.table>tbody>tr>th,.table>thead>tr>th{font-size:inherit;padding:4px 5px}.table.table-legend td,.text-vertical>i{white-space:nowrap}.block-heading button,body{-moz-osx-font-smoothing:grayscale}table.table-sm td.input-cell,table.table-xs td.input-cell{vertical-align:middle;padding:0!important}table.table-sm td.input-cell>select,table.table-xs td.input-cell>select{height:32px;width:100%;padding:0 2px;text-shadow:0 0 0 rgba(255,255,255,.7);background:#fff}table.table-sm td.input-cell>.form-control,table.table-xs td.input-cell>.form-control{height:32px}table.table-sm td.input-cell>input,table.table-xs td.input-cell>input{text-align:center;padding:0;border:none;width:100%;height:100%;min-height:32px}.table>tbody>tr>td .ctx-btns-icons{margin-top:-4px;margin-bottom:-4px;margin-left:-5px}.table>tbody>tr>td .ctx-btns-icons-right{margin-right:-5px;margin-left:0}.table>tbody>tr>td .ctx-btns-icons-center{margin-right:-5px}.table.table-md>tbody>tr>td{padding:4px 5px;font-size:inherit}.table.table-sm>tbody>tr>td,.table.table-sm>tbody>tr>th,.table.table-sm>thead>tr>th{padding:3px 5px;font-size:inherit}.table.table-md>tbody>tr>td .ctx-btns-icons{margin-top:-4px;margin-bottom:-4px;margin-left:-5px}.table.table-md>tbody>tr>td .ctx-btns-icons-right{margin-right:-5px;margin-left:0}.table.table-md>tbody>tr>td .ctx-btns-icons-center{margin-right:-5px}.table.table-xs>tbody>tr>td,.table.table-xs>tbody>tr>th,.table.table-xs>thead>tr>th{padding:2px 5px;font-size:13px}.table.table-sm>tbody>tr>td .ctx-btns-icons{margin-top:-3px;margin-bottom:-3px;margin-left:-5px}.table.table-sm>tbody>tr>td .ctx-btns-icons-right{margin-right:-5px;margin-left:0}.table.table-sm>tbody>tr>td .ctx-btns-icons-center{margin-right:-5px}.table.table-xs>tbody>tr>td .ctx-btns-icons{margin-top:-2px;margin-bottom:-2px;margin-left:-5px}.table.table-xs>tbody>tr>td .ctx-btns-icons-right{margin-right:-5px;margin-left:0}.table.table-xs>tbody>tr>td .ctx-btns-icons-center{margin-right:-5px}.table>tbody>tr>td>p.data,.table>tbody>tr>td>ul{margin:0}.table.table-xs td.input-cell-xs>input{min-height:0}.table tr.readonly-row{background-color:#eee}.table td.cell-select select{height:23px;width:100%;padding:0 2px;text-shadow:0 0 0 rgba(255,255,255,.7);background:#fff}.table.table-left-header>tbody>tr>th{text-align:left}.table.table-middle-cells>tbody>tr>td{vertical-align:middle}.table th.vertical{vertical-align:bottom}.table.table th{text-align:center;background-color:#f4f4f4}.table.table-thin,.table.table-thin-md{width:auto;min-width:40%}.table.table-thin-sm{width:auto;min-width:20%}.table.table-thin-xs{width:auto}.table.table-nobordered td{border-width:0!important}.table.table-legend{font-size:11px}.table>tbody>tr>td.min,.table>tbody>tr>th.min{width:1%}.NullTable .NullTable{width:100%}.disable-th-center{text-align:left!important}.table-striped>tbody>tr:nth-of-type(odd){background-color:#F0F0F0}.table-bordered>tbody>tr>td,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>td,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>thead>tr>th{border:1px solid #C7C7C7}div.jtable-main-container table.jtable tbody>tr>td>a{text-shadow:0 0 0 rgba(51,51,51,0)}div.jtable-main-container table.jtable tbody>tr.jtable-row-selected>td>a{color:#FFF}.table-bright>tbody>tr{background-color:#cce4f9}.table-bright>tbody>tr>td{border:1px solid #fff}.table-bright>tbody>tr>th{background-color:#3c85ca!important;border:1px solid #fff;color:#fff;vertical-align:middle}p [data-prefix],table.table-print .text-top{vertical-align:top}.table-bright>tbody>tr>th a{color:#fff;text-decoration:underline}.table-selectable tr td span.check-mark,body{color:#000;-webkit-font-smoothing:antialiased;font-style:normal}.table-selectable tr td{cursor:pointer}.table-selectable tr td span.check-mark{position:relative;top:1px;font-family:'Glyphicons Halflings';font-weight:400;line-height:1;left:5px;display:inline-block;-ms-opacity:0;opacity:0}.table-selectable tr td span.check-mark:before{content:"\e013"}.table-selectable tr.selected td{background-color:#9CF!important}.table-selectable tr.selected td span.check-mark{-ms-opacity:1;opacity:1}.table-selectable tr.selected:hover td{background-color:#c0e0ff!important}.table-selectable tr.disabled td{background-color:#dfdfdf!important}.table-selectable.with-checks .checkmark{display:inline-block;width:22px;height:22px;-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);transform:rotate(45deg)}@font-face{font-family:"PT Sans Caption";src:url(/vendor/custom/fonts/PTSans/PTC75F_W.eot);src:url(/vendor/custom/fonts/PTSans/PTC75F_W.eot?#iefix) format("embedded-opentype"),url(/vendor/custom/fonts/PTSans/PTC75F_W.woff) format("woff"),url(/vendor/custom/fonts/PTSans/PTC75F_W.ttf) format("truetype"),url(/vendor/custom/fonts/PTSans/PTC75F_W.svg) format("svg");font-weight:600;font-style:normal}@font-face{font-family:"PT Sans Caption";src:url(/vendor/custom/fonts/PTSans/PTC55F_W.eot);src:url(/vendor/custom/fonts/PTSans/PTC55F_W.eot?#iefix) format("embedded-opentype"),url(/vendor/custom/fonts/PTSans/PTC55F_W.woff) format("woff"),url(/vendor/custom/fonts/PTSans/PTC55F_W.ttf) format("truetype"),url(/vendor/custom/fonts/PTSans/PTC55F_W.svg) format("svg");font-weight:400;font-style:normal}@font-face{font-family:"Open Sans";src:url(/vendor/custom/fonts/OpenSans-Light-webfont.eot);src:url(/vendor/custom/fonts/OpenSans-Light-webfont.eot?#iefix) format("embedded-opentype"),url(/vendor/custom/fonts/OpenSans-Light-webfont.woff) format("woff"),url(/vendor/custom/fonts/OpenSans-Light-webfont.ttf) format("truetype"),url('/vendor/custom/fonts/OpenSans-Light-webfont.svg#Open Sans') format("svg");font-weight:300;font-style:normal}@font-face{font-family:"Open Sans";src:url(/vendor/custom/fonts/OpenSans-Regular-webfont.eot);src:url(/vendor/custom/fonts/OpenSans-Regular-webfont.eot?#iefix) format("embedded-opentype"),url(/vendor/custom/fonts/OpenSans-Regular-webfont.woff) format("woff"),url(/vendor/custom/fonts/OpenSans-Regular-webfont.ttf) format("truetype"),url('/vendor/custom/fonts/OpenSans-Regular-webfont.svg#Open Sans') format("svg");font-weight:400;font-style:normal}@font-face{font-family:"Open Sans";src:url(/vendor/custom/fonts/OpenSans-Semibold-webfont.eot);src:url(/vendor/custom/fonts/OpenSans-Semibold-webfont.eot?#iefix) format("embedded-opentype"),url(/vendor/custom/fonts/OpenSans-Semibold-webfont.woff) format("woff"),url(/vendor/custom/fonts/OpenSans-Semibold-webfont.ttf) format("truetype"),url('/vendor/custom/fonts/OpenSans-Semibold-webfont.svg#Open Sans') format("svg");font-weight:600;font-style:normal}.text-vertical{width:1.2em;text-align:left;line-height:1.2em;display:inline-block;margin-top:5px}.text-vertical>i{float:left;font-style:normal;-webkit-transform:translate(0,100%) rotate(-90deg);-ms-transform:translate(0,100%) rotate(-90deg);-moz-transform:translate(0,100%) rotate(-90deg);-o-transform:translate(0,100%) rotate(-90deg);transform:translate(0,100%) rotate(-90deg);-webkit-transform:translate3d(0,100%,0) rotate(-90deg);transform:translate3d(0,100%,0) rotate(-90deg);-webkit-transform-origin:0 0;-ms-transform-origin:0 0;-moz-transform-origin:0 0;-o-transform-origin:0 0;transform-origin:0 0}.text-vertical>i:after{margin-top:100%;content:"";float:left}.text-break{-ms-word-break:break-all;word-break:break-all}.font-lg{font-size:1.2em}.text-compact{letter-spacing:-.04em}.text-left{text-align:left!important}.text-right{text-align:right!important}.text-center{text-align:center!important}.text-nowrap{white-space:nowrap!important}br.mini{display:block;margin:5px 0;content:" ";line-height:22px}p.mini{margin:1px 0 0}h1,h2,h3{color:#06A;letter-spacing:-.04em;margin:1em 0 .5em}h1.first,h2.first,h3.first{margin-top:0}hgroup{width:100%;display:table;margin:0 0 .8em}hgroup aside,hgroup h1,hgroup h2,hgroup h3,hgroup h4,hgroup h5{margin:0;width:100%;display:table-cell;vertical-align:middle;word-wrap:break-word;word-break:break-word}hgroup aside{width:auto;color:#39C;text-align:right;padding-left:30px;white-space:nowrap}.fggray{color:#676767}.fggreen{color:green}span.big{font-size:15px}p{margin:.5em 0 0}p [data-prefix]{max-width:100%;margin:0 .8em 0 0;display:inline-block}p [data-prefix]:before{color:#888;white-space:pre;content:attr(data-prefix);padding-right:4px}.block-data{margin:.5em 0 1.5em}.block-data .block-item{padding:6px}.block-data .block-item .item-descr{color:gray;font-weight:100;font-size:small;display:block}.block-data .block-item .ops,.block-data .block-item p,.block-heading,.legend div{display:inline-block}.block-data .block-item:hover{background-color:rgba(0,152,255,.08)}.block-data .block-item:hover .ops{opacity:1}.block-data .block-item .ops{position:absolute;float:right;right:15px;vertical-align:middle;opacity:0;transition:opacity 50ms ease-in-out}.block-data .block-item .ops button{margin-left:5px}.block-heading{width:100%;line-height:28px;position:relative}.block-heading:after{content:'';height:1px;display:block;overflow:hidden;background:#DDD;margin-top:14px}.block-heading>h4{float:left;max-width:85%;overflow:hidden;margin:0 5px 0 0;line-height:inherit;letter-spacing:-1px;text-overflow:ellipsis;white-space:nowrap;color:#07B}.block-heading button{float:right;cursor:pointer;margin-left:5px;height:2em;padding:0 .7em;line-height:190%;text-align:center;white-space:nowrap;border:1px solid #b8bdc3;text-shadow:0 1px 0 rgba(255,255,255,.5);box-shadow:inset 0 1px 0 rgba(255,255,255,.4);background-image:linear-gradient(to bottom,rgba(255,255,255,.4),rgba(255,255,255,0));background-origin:border-box;transition:all .2s ease;box-sizing:border-box;border-radius:.143em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;color:#30363c;background-color:#d9dcdf;border-color:rgba(108,118,128,.3);-webkit-font-smoothing:antialiased}table.table-print .separator,table.table-print-num .separator,table.table-print-num-1 .separator,table.table-print-text .separator{height:15px}.block-heading button.round{border-radius:1em}.block-heading button:hover{box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 1px 1px rgba(0,0,0,.15);color:#191c20;background-color:#c8cdd1;border-color:#9ca4ac;border-color:rgba(94,103,112,.4)}.block-heading button:active{background-image:none;text-shadow:0 1px 0 rgba(255,255,255,.3);box-shadow:inset 0 0 .143em rgba(0,0,0,.3),0 1px 0 rgba(255,255,255,.1);color:#030303;background-color:#bbbdc0;border-color:#868a8f;border-color:rgba(84,87,91,.5)}table.table-print,table.table-print-num,table.table-print-num-1,table.table-print-text{border-spacing:0 0;empty-cells:show;color:#111}.block-heading button:focus{outline:0;border-color:#09f;box-shadow:0 0 3px #09f}table.NullTable,table.NullTable td,table.NullTable th{border:none;padding:0}.visible-scr-row-sm,.visible-scr-row-xs,.visible-scr-sm,.visible-scr-xs{display:none}@media only screen and (max-width:468px){.visible-scr-sm,.visible-scr-xs{display:block}.hidden-scr-sm,.hidden-scr-xs{display:none!important}}@media only screen and (max-width:665px){.visible-scr-sm{display:block}.visible-scr-row-sm{display:table-row}.hidden-scr-sm{display:none!important}}table.table-print th{text-align:center;font-weight:700;padding:4px;background-color:#eaeaea;min-width:20px}table.table-print th.vertical{text-align:center}table.table-print th.vertical>i{text-align:center;text-orientation:sideways;font-style:normal;white-space:nowrap;writing-mode:bt-rl;-ms-transform:rotate(180deg)}@supports (contain:size){table.table-print th.vertical>i{white-space:normal}}@supports (display:grid){table.table-print th.vertical>i{transform:rotate(180deg);writing-mode:vertical-rl}}table.table-print th.small{font-size:10px;line-height:1.2}table.table-print td{text-align:center}table.table-print .cell-num{text-align:right!important}table.table-print .cell-num-center{text-align:center!important}table.table-print .cell-date,table.table-print .cell-date-time,table.table-print .cell-text{text-align:left}table.table-print .cell-text-center{text-align:center}table.table-print .cell-text-right{text-align:right}table.table-print .cell-date-short{text-align:left}table.table-print .cell-num-1,table.table-print .cell-num-2,table.table-print .cell-num-4{text-align:right}table.table-print .text-bottom{vertical-align:bottom}table.table-print .text-vmiddle{vertical-align:middle}table.table-print .text-top-center,table.table-print-num .text-top{vertical-align:top}table.table-print .text-top-center td{text-align:center}table.table-print td.totals,table.table-print tr.totals td{font-size:12px;background-color:#dcdcdc;text-align:center}table.table-print td.subtotals,table.table-print td.subtotals2,table.table-print tr.subtotals td,table.table-print tr.subtotals2 td{font-size:12px;background-color:#eaeaea;text-align:center}table.table-print-num th{text-align:center;font-weight:700;padding:4px;background-color:#eaeaea;min-width:20px}table.table-print-num th.vertical{text-align:center}table.table-print-num th.vertical>i{text-align:center;text-orientation:sideways;font-style:normal;white-space:nowrap;writing-mode:bt-rl;-ms-transform:rotate(180deg)}@supports (contain:size){table.table-print-num th.vertical>i{white-space:normal}}@supports (display:grid){table.table-print-num th.vertical>i{transform:rotate(180deg);writing-mode:vertical-rl}}table.table-print-num th.small{font-size:10px;line-height:1.2}table.table-print-num td{text-align:right}table.table-print-num .cell-num{text-align:right!important}table.table-print-num .cell-num-center{text-align:center!important}table.table-print-num .cell-date,table.table-print-num .cell-date-time,table.table-print-num .cell-text{text-align:left}table.table-print-num .cell-text-center{text-align:center}table.table-print-num .cell-text-right{text-align:right}table.table-print-num .cell-date-short{text-align:left}table.table-print-num .cell-num-1,table.table-print-num .cell-num-2,table.table-print-num .cell-num-4{text-align:right}table.table-print-num .text-bottom{vertical-align:bottom}table.table-print-num .text-vmiddle{vertical-align:middle}table.table-print-num .text-top-center,table.table-print-num-1 .text-top{vertical-align:top}table.table-print-num .text-top-center td{text-align:center}table.table-print-num td.totals,table.table-print-num tr.totals td{font-size:12px;background-color:#dcdcdc;text-align:center}table.table-print-num td.subtotals,table.table-print-num td.subtotals2,table.table-print-num tr.subtotals td,table.table-print-num tr.subtotals2 td{font-size:12px;background-color:#eaeaea;text-align:center}table.table-print-num-1 th{text-align:center;font-weight:700;padding:4px;background-color:#eaeaea;min-width:20px}table.table-print-num-1 th.vertical{text-align:center}table.table-print-num-1 th.vertical>i{text-align:center;text-orientation:sideways;font-style:normal;white-space:nowrap;writing-mode:bt-rl;-ms-transform:rotate(180deg)}@supports (contain:size){table.table-print-num-1 th.vertical>i{white-space:normal}}@supports (display:grid){table.table-print-num-1 th.vertical>i{transform:rotate(180deg);writing-mode:vertical-rl}}table.table-print-num-1 th.small{font-size:10px;line-height:1.2}table.table-print-num-1 td{text-align:right}table.table-print-num-1 .cell-num{text-align:right!important}table.table-print-num-1 .cell-num-center{text-align:center!important}table.table-print-num-1 .cell-date,table.table-print-num-1 .cell-date-time,table.table-print-num-1 .cell-text{text-align:left}table.table-print-num-1 .cell-text-center{text-align:center}table.table-print-num-1 .cell-text-right{text-align:right}table.table-print-num-1 .cell-date-short{text-align:left}table.table-print-num-1 .cell-num-1,table.table-print-num-1 .cell-num-2,table.table-print-num-1 .cell-num-4{text-align:right}table.table-print-num-1 .text-bottom{vertical-align:bottom}table.table-print-num-1 .text-vmiddle{vertical-align:middle}table.table-print-num-1 .text-top-center,table.table-print-text .text-top{vertical-align:top}table.table-print-num-1 .text-top-center td{text-align:center}table.table-print-num-1 td.totals,table.table-print-num-1 tr.totals td{font-size:12px;background-color:#dcdcdc;text-align:center}table.table-print-num-1 td.subtotals,table.table-print-num-1 td.subtotals2,table.table-print-num-1 tr.subtotals td,table.table-print-num-1 tr.subtotals2 td{font-size:12px;background-color:#eaeaea;text-align:center}table.table-print-text th{text-align:center;font-weight:700;padding:4px;background-color:#eaeaea;min-width:20px}table.table-print-text th.vertical{text-align:center}table.table-print-text th.vertical>i{text-align:center;text-orientation:sideways;font-style:normal;white-space:nowrap;writing-mode:bt-rl;-ms-transform:rotate(180deg)}@supports (contain:size){table.table-print-text th.vertical>i{white-space:normal}}@supports (display:grid){table.table-print-text th.vertical>i{transform:rotate(180deg);writing-mode:vertical-rl}}table.table-print-text th.small{font-size:10px;line-height:1.2}table.table-print-text td{text-align:left}table.table-print-text .cell-num{text-align:right!important}table.table-print-text .cell-num-center{text-align:center!important}table.table-print-text .cell-date,table.table-print-text .cell-date-time,table.table-print-text .cell-text{text-align:left}table.table-print-text .cell-text-center{text-align:center}table.table-print-text .cell-text-right{text-align:right}table.table-print-text .cell-date-short{text-align:left}table.table-print-text .cell-num-1,table.table-print-text .cell-num-2,table.table-print-text .cell-num-4{text-align:right}table.table-print-text .text-bottom{vertical-align:bottom}table.table-print-text .text-vmiddle{vertical-align:middle}.legend div,.text-valing-top,table.table-print-text .text-top-center{vertical-align:top}table.table-print-text .text-top-center td{text-align:center}table.table-print-text td.totals,table.table-print-text tr.totals td{font-size:12px;background-color:#dcdcdc;text-align:center}table.table-print-text td.subtotals,table.table-print-text td.subtotals2,table.table-print-text tr.subtotals td,table.table-print-text tr.subtotals2 td{font-size:12px;background-color:#eaeaea;text-align:center}.report-title{font-weight:700;font-size:18pt;text-align:center}.report-title-school{text-align:center;font-size:12px;font-weight:400}table.NullTable{font-size:small;border-collapse:separate;float:none}table.NullTable th{text-align:left;background-color:transparent}.message{font-size:40pt}.table-striped>tbody>tr:nth-child(odd)>td,.table-striped>tbody>tr:nth-child(odd)>th{background-color:#eaeaea}hr.page-break-after{page-break-after:always;margin:0}body{position:relative;margin:15px;padding:0;font-family:'PT Sans Caption','Open Sans',Arial,Helvetica,sans-serif;font-variant:normal;font-weight:400;font-stretch:normal;text-rendering:geometricPrecision}.print-block .panel{border-bottom:0;margin-bottom:0;border-radius:0}.print-block .panel .panel-heading{border-bottom:0}.print-block .panel .panel-heading .panel-title{font-weight:600}.print-block .panel-default{border-color:#c7c7c7}ul.list-unstyled{margin:0!important}#report{font-size:10px}.legend{font-size:12px;margin-top:7px;padding-left:15px}.legend div{margin-right:20px}.legend div p{height:25px;margin-top:9px}.legend div p span.legend-label{width:40px;height:25px;border:1px solid #d0d0d0;float:left;text-align:center;padding:3px 0 0;margin:-3px 5px 0 0}.legend div p span.slice-work{background:#E8FFDE}.legend div p span.examination{background:#FFFFE4}@media print{*,blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,textarea,th,ul{color:#000!important}}table.table-print,table.table-print-num,table.table-print-num-1,table.table-print-text{font-size:10pt;font-family:Arial}table.table-print th,table.table-print-num th,table.table-print-num-1 th,table.table-print-text th{font-size:10pt;border:.5pt solid #000;mso-style-parent:style0;mso-number-format:"\@"}table.table-print td,table.table-print-num td,table.table-print-num-1 td,table.table-print-text td{border:.5pt solid #000;padding:2px 4px;mso-style-parent:style0;mso-number-format:"@"}table.table-print br,table.table-print-num br,table.table-print-num-1 br,table.table-print-text br{mso-data-placement:same-cell}table.table-print .style0,table.table-print-num .style0,table.table-print-num-1 .style0,table.table-print-text .style0{mso-number-format:general;text-align:general;vertical-align:middle;white-space:nowrap;mso-rotate:0;mso-background-source:auto;mso-pattern:auto;color:windowtext;font-size:10pt;font-weight:400;font-style:normal;text-decoration:none;font-family:Arial;mso-generic-font-family:auto;mso-font-charset:204;border:none;mso-protection:locked visible;mso-style-name:Normal;mso-style-id:0}table.table-print .cell,table.table-print-num .cell,table.table-print-num-1 .cell,table.table-print-text .cell{mso-style-parent:style0;mso-number-format:general;mso-width-source:auto}table.table-print .cell-num,table.table-print .cell-num-center,table.table-print-num .cell-num,table.table-print-num .cell-num-center,table.table-print-num-1 .cell-num,table.table-print-num-1 .cell-num-center,table.table-print-text .cell-num,table.table-print-text .cell-num-center{mso-style-parent:style0;mso-number-format:0;mso-width-source:auto}table.table-print .cell-date,table.table-print-num .cell-date,table.table-print-num-1 .cell-date,table.table-print-text .cell-date{mso-number-format:"Short Date"}table.table-print .cell-date-time,table.table-print-num .cell-date-time,table.table-print-num-1 .cell-date-time,table.table-print-text .cell-date-time{mso-number-format:"dd\.mm\.yyyy hh\:mm"}table.table-print .cell-text,table.table-print .cell-text-center,table.table-print .cell-text-right,table.table-print-num .cell-text,table.table-print-num .cell-text-center,table.table-print-num .cell-text-right,table.table-print-num-1 .cell-text,table.table-print-num-1 .cell-text-center,table.table-print-num-1 .cell-text-right,table.table-print-text .cell-text,table.table-print-text .cell-text-center,table.table-print-text .cell-text-right{mso-style-parent:style0;mso-number-format:"\@"}table.table-print .cell-date-short,table.table-print-num .cell-date-short,table.table-print-num-1 .cell-date-short,table.table-print-text .cell-date-short{mso-number-format:"d\.mm\.yy"}table.table-print .cell-num-1,table.table-print-num .cell-num-1,table.table-print-num-1 .cell-num-1,table.table-print-text .cell-num-1{mso-style-parent:style0;mso-number-format:"0.0";mso-width-source:auto}table.table-print .cell-num-2,table.table-print-num .cell-num-2,table.table-print-num-1 .cell-num-2,table.table-print-text .cell-num-2{mso-style-parent:style0;mso-number-format:"0.00";mso-width-source:auto}table.table-print .cell-num-4,table.table-print-num .cell-num-4,table.table-print-num-1 .cell-num-4,table.table-print-text .cell-num-4{mso-style-parent:style0;mso-number-format:"0.0000";mso-width-source:auto}table.table-print .cell-percent,table.table-print-num .cell-percent,table.table-print-num-1 .cell-percent,table.table-print-text .cell-percent{mso-style-parent:style0;mso-number-format:"Percent"}</style></head><body><h5 class="report-title-school">Негосударственное (частное) общеобразовательное учреждение (НОУ) гимназия "Школа бизнеса"</h5>
+
+<h2 align="center">Отчет об успеваемости и посещаемости ученика</h2>
+
+<br>
+
+
+<br>
+	<table cellspacing="10px">
+		<tbody><tr>
+			
+			<td>
+					<span class="select"><b>Учебный год:</b> 2021/2022</span><br>
+					<span class="select"><b>Класс:</b> 9Б</span><br>
+					<span class="select"><b>Период:</b> с 1.09.21 по 30.10.21</span><br>
+				<span class="select"><b>Ученик:</b> Шевченко Глеб</span><br>
+			</td>
+		</tr>
+	</tbody></table>
+	<br>
+	<table class="table-print">
+		<tbody><tr>
+			<th rowspan="2">Предмет</th>
+				<th colspan="25">Сентябрь</th>
+				<th colspan="25">Октябрь</th>
+			<th rowspan="2">Средняя оценка</th>
+		</tr>
+		<tr>
+				<th>2</th>
+				<th>3</th>
+				<th>4</th>
+				<th>6</th>
+				<th>7</th>
+				<th>8</th>
+				<th>9</th>
+				<th>10</th>
+				<th>11</th>
+				<th>13</th>
+				<th>14</th>
+				<th>15</th>
+				<th>16</th>
+				<th>17</th>
+				<th>18</th>
+				<th>20</th>
+				<th>21</th>
+				<th>22</th>
+				<th>23</th>
+				<th>24</th>
+				<th>25</th>
+				<th>27</th>
+				<th>28</th>
+				<th>29</th>
+				<th>30</th>
+				<th>1</th>
+				<th>2</th>
+				<th>4</th>
+				<th>5</th>
+				<th>6</th>
+				<th>7</th>
+				<th>8</th>
+				<th>9</th>
+				<th>11</th>
+				<th>12</th>
+				<th>13</th>
+				<th>14</th>
+				<th>15</th>
+				<th>16</th>
+				<th>18</th>
+				<th>19</th>
+				<th>20</th>
+				<th>21</th>
+				<th>22</th>
+				<th>23</th>
+				<th>25</th>
+				<th>26</th>
+				<th>27</th>
+				<th>28</th>
+				<th>29</th>
+		</tr>
+			<tr>
+				<td class="cell-text">Геометрия</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						3
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,43</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Алгебра</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						3
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,67</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Информатика</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,8</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Физическая культура</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,71</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Основы безопасности жизнедеятельности</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">5</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Химия</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,8</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Биология</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						УП
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,8</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Физика</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,63</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Иностранный язык (английский)</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						3
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						5
+					</td>
+				<td class="cell-num">4,63</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Второй иностранный язык</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,85</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Кубановедение</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">5</td>
+			</tr>
+			<tr>
+				<td class="cell-text">География</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						3
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+				<td class="cell-num">4,71</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Обществознание</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,6</td>
+			</tr>
+			<tr>
+				<td class="cell-text">История России. Всеобщая история</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,89</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Русский язык</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						3
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						3
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5&nbsp;4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,08</td>
+			</tr>
+			<tr>
+				<td class="cell-text">Литература</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						Б
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						4
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						5
+					</td>
+					<td>
+						
+						
+					</td>
+					<td>
+						
+						
+					</td>
+				<td class="cell-num">4,64</td>
+			</tr>
+	</tbody></table>
+	<br>
+	<div class=""><br><table name="legend"> <tbody><tr>   </tr><tr> <td style="padding-right:20px; border:1px solid #000; background-color: rgba(0, 0, 0, 0)">УП</td> <td style="white-space:nowrap;">Пропуск по уважительной причине</td> </tr>  <tr> <td style="padding-right:20px; border:1px solid #000; background-color: rgba(0, 0, 0, 0)">Б</td> <td style="white-space:nowrap;">Пропуск по болезни</td> </tr>  <tr> <td style="padding-right:20px; border:1px solid #000; background-color: rgba(0, 0, 0, 0)">НП</td> <td style="white-space:nowrap;">Пропуск по неуважительной причине</td> </tr>    <tr> <td style="padding-right:20px; border:1px solid #000; background-color: rgba(0, 0, 0, 0)">ОТ</td> <td style="white-space:nowrap;">Отсутствовал</td> </tr>  <tr> <td style="padding-right:20px; border:1px solid #000; background-color: rgba(0, 0, 0, 0)">ОП</td> <td style="white-space:nowrap;">Опоздал</td> </tr>    <tr> <td style="padding-right:20px; border:1px solid #000; background-color: rgba(0, 0, 0, 0)">ОСВ</td> <td style="white-space:nowrap;">Освобожден</td> </tr>   </tbody></table></div>
+	<br>
+	<div class="body">Подпись родителей:</div>
+
+<br>
+<span class="smalltext"><i>Состояние на 14.11.21 19:10:10</i></span>
+<br>
+<span class="smalltext">© <i>Сетевой Город. Образование</i> 5.0.58547.626</span></body>
