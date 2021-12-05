@@ -11,6 +11,7 @@ data = pd.read_html('Отчет об успеваемости и посещае�
 df = data[1]
 
 app = dash.Dash(__name__)
+server = app.server
 
 fig_one = func.plot_marks(df)
 
@@ -49,4 +50,4 @@ def update_figure(value):
     return fig_two
 
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run_server(debug=False)
