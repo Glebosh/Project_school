@@ -56,7 +56,7 @@ def update_figure(value):
     emoji = u'\U0001f643' if mean >= 4.5 else u'\U0001f612'
     if mean <= 3.5:
         emoji =  u'\U0001f614'
-    mean_str = f'Средний балл по предмету: {mean:.2f} ' + emoji
+    mean_str = f'Средний балл по предмету "{value}" за весь год: {mean:.2f} ' + emoji
     return fig_two, mean_str
 
 if __name__ == '__main__':

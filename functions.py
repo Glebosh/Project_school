@@ -32,7 +32,7 @@ def get_figure(data: list):
     fig = go.Figure(data=data)
 
     fig.update_layout(
-        title='отметки за период',
+        title='Отметки за год',
         xaxis=dict(
             title='отметки',
             titlefont_size=16,
@@ -74,7 +74,7 @@ def plot_subject(df, subject):
     marks = get_marks_for_subject(df, subject)
     bar = get_marks_bar(marks, subject)
     fig = get_figure([bar])
-    fig.update_layout(title=f'Отметки по {subject}')
+    fig.update_layout(title=f'Отметки за год по предмету: "{subject}"')
     return fig
 
 
@@ -84,3 +84,38 @@ def get_subjects(df):
         subjects.append(df.iloc[idx][0])
 
     return sorted(subjects)
+
+
+def calculate_average_mark(df, month, subject):
+    marks = {'2': 0, '3': 0, '4': 0, '5': 0}
+    
+    subjects = list()
+    for idx in range(len(df)):
+        subjects.append(df.iloc[idx][0])
+
+    for subj_idx, s in enumerate(subjects):
+        if s == subject:
+            break
+
+    row = df[month].iloc[subj_idx]
+    row = pd.to_numeric(row, errors='coerce')
+    row = row.dropna()
+
+    for mark in row.values:
+        marks[str(int(mark))] += 1
+    
+    total = 0
+
+    for mark, count in marks.items():
+        total += int(mark) * count
+    avg = total / sum(marks.values())
+    return avg
+
+
+def get_months(df):
+    months = [0]
+    for col in df.columns[1:-1]:
+        if months[-1] != col[0]:
+            months.append(col[0])
+    months = months[1:]
+    return months
