@@ -119,3 +119,29 @@ def get_months(df):
             months.append(col[0])
     months = months[1:]
     return months
+
+
+def plot_trend(df, subject):
+    months = get_months(df)
+    plot_months = []
+    plot_avg = []
+    for m in months:
+        average_mark = calculate_average_mark(df, month=m, subject=subject)
+        plot_months.append(m)
+        plot_avg.append(average_mark)
+    fig = go.Figure(data=go.Scatter(x=plot_months, y=plot_avg))
+
+    fig.update_layout(
+        title=f'Средние отметки по предмету: "{subject}"',
+        xaxis=dict(
+            title='месяц',
+            titlefont_size=16,
+            tickfont_size=14,
+        ),
+        yaxis=dict(
+            title='средняя отметка',
+            titlefont_size=16,
+            tickfont_size=14,
+        ),
+    )
+    return fig

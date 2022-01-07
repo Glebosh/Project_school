@@ -24,7 +24,7 @@ dropdown = dcc.Dropdown(
         value=all_subj[0]
     )
 
-div = [dcc.Graph(id='graph_subject'), html.P('', id='mark_text'), dropdown]
+div = [dropdown, html.P('', id='mark_text'), dcc.Graph(id='graph_subject'), dcc.Graph(id='graph_trend')]
 
 app.layout = html.Div(
     className="row",
@@ -44,10 +44,12 @@ app.layout = html.Div(
 @app.callback(
     Output('graph_subject', 'figure'),
     Output('mark_text', component_property='children'),
+    Output('graph_trend', 'figure'),
     Input('dropdown', 'value')
 )
 def update_figure(value):
     fig_two = func.plot_subject(df, subject=value)
+
     marks = func.get_marks_for_subject(df, value)
     total = 0
     for mark, count in marks.items():   
@@ -57,7 +59,10 @@ def update_figure(value):
     if mean <= 3.5:
         emoji =  u'\U0001f614'
     mean_str = f'Средний балл по предмету "{value}" за весь год: {mean:.2f} ' + emoji
-    return fig_two, mean_str
+
+    fig_three = func.plot_trend(df, value)
+
+    return fig_two, mean_str, fig_three
 
 if __name__ == '__main__':
     app.run_server(debug=True)
