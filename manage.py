@@ -6,7 +6,7 @@ from dash.dependencies import Input, Output
 
 import pandas as pd
 
-data = pd.read_html('Отчет об успеваемости и посещаемости ученика.xls')
+data = pd.read_html('Отчет об успеваемости и посещаемости ученика первый семестр.xls')
 
 df = data[1]
 
@@ -24,7 +24,7 @@ dropdown = dcc.Dropdown(
         value=all_subj[0]
     )
 
-div = [html.P('', id='mark_text'), dcc.Graph(id='graph_subject'), dropdown]
+div = [dcc.Graph(id='graph_subject'), html.P('', id='mark_text'), dropdown]
 
 app.layout = html.Div(
     className="row",
@@ -48,8 +48,16 @@ app.layout = html.Div(
 )
 def update_figure(value):
     fig_two = func.plot_subject(df, subject=value)
-    #mean_mark = func.mean_subject_mark(df, subject=value)
-    return fig_two, 'test'
+    marks = func.get_marks_for_subject(df, value)
+    total = 0
+    for mark, count in marks.items():   
+        total += int(mark) * count
+    mean = total / sum(marks.values())
+    emoji = u'\U0001f643' if mean >= 4.5 else u'\U0001f612'
+    if mean <= 3.5:
+        emoji =  u'\U0001f614'
+    mean_str = f'Средний балл по предмету: {mean:.2f} ' + emoji
+    return fig_two, mean_str
 
 if __name__ == '__main__':
-    app.run_server(debug=False)
+    app.run_server(debug=True)
