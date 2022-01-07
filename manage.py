@@ -24,7 +24,7 @@ dropdown = dcc.Dropdown(
         value=all_subj[0]
     )
 
-div = [dcc.Graph(id='graph_subject'), dropdown]
+div = [html.P('', id='mark_text'), dcc.Graph(id='graph_subject'), dropdown]
 
 app.layout = html.Div(
     className="row",
@@ -43,11 +43,13 @@ app.layout = html.Div(
 
 @app.callback(
     Output('graph_subject', 'figure'),
+    Output('mark_text', component_property='children'),
     Input('dropdown', 'value')
 )
 def update_figure(value):
-    fig_two = func.plot_subject(df, value)
-    return fig_two
+    fig_two = func.plot_subject(df, subject=value)
+    #mean_mark = func.mean_subject_mark(df, subject=value)
+    return fig_two, 'test'
 
 if __name__ == '__main__':
     app.run_server(debug=False)
