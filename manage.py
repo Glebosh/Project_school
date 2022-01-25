@@ -6,7 +6,7 @@ from dash.dependencies import Input, Output
 
 import pandas as pd
 
-data = pd.read_html('Отчет об успеваемости и посещаемости ученика первый семестр.xls')
+data = pd.read_html('report.xls')
 
 df = data[1]
 
