@@ -9,14 +9,12 @@ from dash.dependencies import Input, Output, State
 import pandas as pd
 
 data = pd.read_html('report.xls')
-
 df = data[1]
 
 app = dash.Dash(__name__)
 server = app.server
 
 fig_one = func.plot_marks(df)
-
 all_subj = func.get_subjects(df)
 options = [{'label': i, 'value': i} for i in all_subj]
 
@@ -30,13 +28,6 @@ div = [dropdown, html.P('', id='mark_text'), dcc.Graph(id='graph_subject'), dcc.
 figures_html = html.Div(
     className="row",
     children=[
-        html.H1(
-        children='Hello Dash',
-        style={
-            'textAlign': 'center',
-            'color': '#7FDBFF'
-        }
-    ),
         html.Div(
             className="column",
             children=dcc.Graph(
@@ -54,7 +45,13 @@ figures_html = html.Div(
 )
 
 file_upload_html = html.Div([
-    html.A('Select files'),
+    html.H1(
+        children='Hello, Gleb!',
+        style={
+            'textAlign': 'center',
+            'color': '#7FDBFF'
+        }
+    ),
     dcc.Upload(
         id='upload-data',
         children=html.Div([
@@ -90,7 +87,7 @@ def parse_contents(contents, filename, date):
             f.write(data_upload.getbuffer())
         data = pd.read_html('uploud_report.xls')
         df = data[1]
-        return df
+        return html.Div(['Upload finished']), df
     except Exception as e:
         print(e)
         return html.Div([
@@ -122,16 +119,23 @@ def update_figure(value):
 
 
 @app.callback(Output('output-data-upload', 'children'),
+              Output('graph_months', 'figure'),
+              Output('dropdown', 'options'),
+              Output('dropdown', 'value'),
               Input('upload-data', 'contents'),
               State('upload-data', 'filename'),
               State('upload-data', 'last_modified'))
 def update_output(list_of_contents, list_of_names, list_of_dates):
+    output_div = html.Div([''])
+
     if list_of_contents is not None:
-        data = [
-            parse_contents(c, n, d) for c, n, d in
-            zip(list_of_contents, list_of_names, list_of_dates)]
         global df
-        df = data[-1]
+        output_div, df = parse_contents(list_of_contents[-1], list_of_names[-1], list_of_dates[-1])
+
+    all_subj = func.get_subjects(df)
+    options = [{'label': i, 'value': i} for i in all_subj]
+    fig_months = func.plot_marks(df)
+    return output_div, fig_months, options, all_subj[0]
 
 if __name__ == '__main__':
     app.run_server(debug=True)

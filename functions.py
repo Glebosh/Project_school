@@ -108,7 +108,11 @@ def calculate_average_mark(df, month, subject):
 
     for mark, count in marks.items():
         total += int(mark) * count
-    avg = total / sum(marks.values())
+    
+    if total == 0:
+        avg = 0
+    else:
+        avg = total / sum(marks.values())
     return avg
 
 
