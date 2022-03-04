@@ -25,8 +25,7 @@ dropdown = dcc.Dropdown(
     )
 
 div = [dropdown, html.P('', id='mark_text'), dcc.Graph(id='graph_subject'), dcc.Graph(id='graph_trend')]
-
-app.layout = html.Div(
+figures_html = html.Div(
     className="row",
     children=[
         html.Div(
@@ -39,7 +38,37 @@ app.layout = html.Div(
             className="column",
             children=div 
         ),  
-])
+    ],
+    style={
+        'margin-top': '50px'
+    }
+)
+
+file_upload_html = html.Div([
+    html.A('Select files'),
+    dcc.Upload(
+        id='upload-data',
+        children=html.Div([
+            'Drag and Drop or ',
+            html.A('Select Files')
+        ]),
+        style={
+            'width': '50%',
+            'height': '60px',
+            'lineHeight': '60px',
+            'borderWidth': '1px',
+            'borderStyle': 'dashed',
+            'borderRadius': '5px',
+            'textAlign': 'center',
+            'margin': 'auto'
+        },
+        # Allow multiple files to be uploaded
+        multiple=True
+    ),
+    html.Div(id='output-data-upload'),
+ ])
+
+app.layout = html.Div(children=[file_upload_html, figures_html])
 
 @app.callback(
     Output('graph_subject', 'figure'),
