@@ -10,7 +10,9 @@ data = pd.read_html('report.xls')
 
 df = data[1]
 
-app = dash.Dash(__name__)
+external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
+
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 
 fig_one = func.plot_marks(df)
@@ -78,12 +80,29 @@ file_upload_html = html.Div([
 app.layout = html.Div(children=[file_upload_html, figures_html])
 
 
+def parse_contents(contents, filename, date):
+    content_type, content_string = contents.split(',')
+
+    decoded = base64.b64decode(content_string)
+    try:
+        data_upload = io.BytesIO(decoded)
+        with open("uploud_report.xls", "wb") as f:
+            f.write(data_upload.getbuffer())
+        data = pd.read_html('uploud_report.xls')
+        df = data[1]
+        return df
+    except Exception as e:
+        print(e)
+        return html.Div([
+            'There was an error processing this file.'
+        ])
+
+
 @app.callback(
     Output('graph_subject', 'figure'),
     Output('mark_text', component_property='children'),
     Output('graph_trend', 'figure'),
-    Input('dropdown', 'value')
-)
+    Input('dropdown', 'value'))
 def update_figure(value):
     fig_two = func.plot_subject(df, subject=value)
 
@@ -100,6 +119,19 @@ def update_figure(value):
     fig_three = func.plot_trend(df, value)
 
     return fig_two, mean_str, fig_three
+
+
+@app.callback(Output('output-data-upload', 'children'),
+              Input('upload-data', 'contents'),
+              State('upload-data', 'filename'),
+              State('upload-data', 'last_modified'))
+def update_output(list_of_contents, list_of_names, list_of_dates):
+    if list_of_contents is not None:
+        data = [
+            parse_contents(c, n, d) for c, n, d in
+            zip(list_of_contents, list_of_names, list_of_dates)]
+        global df
+        df = data[-1]
 
 if __name__ == '__main__':
     app.run_server(debug=True)
