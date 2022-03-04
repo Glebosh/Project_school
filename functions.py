@@ -30,8 +30,8 @@ def get_marks_for_subject(df, subject):
 
 def get_figure(data: list):
     fig = go.Figure(data=data)
-
     fig.update_layout(
+        template="plotly_white",
         title='Отметки за год',
         xaxis=dict(
             title='отметки',
@@ -132,6 +132,7 @@ def plot_trend(df, subject):
     fig = go.Figure(data=go.Scatter(x=plot_months, y=plot_avg))
 
     fig.update_layout(
+        template="plotly_white",
         title=f'Средние отметки по предмету: "{subject}"',
         xaxis=dict(
             title='месяц',

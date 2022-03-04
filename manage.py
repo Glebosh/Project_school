@@ -27,8 +27,16 @@ dropdown = dcc.Dropdown(
 div = [dropdown, html.P('', id='mark_text'), dcc.Graph(id='graph_subject'), dcc.Graph(id='graph_trend')]
 
 app.layout = html.Div(
+    # style={'backgroundColor': '#111111'},
     className="row",
     children=[
+        html.H1(
+        children='Hello Dash',
+        style={
+            'textAlign': 'center',
+            'color': '#7FDBFF'
+        }
+    ),
         html.Div(
             className="column",
             children=dcc.Graph(
@@ -40,6 +48,7 @@ app.layout = html.Div(
             children=div 
         ),  
 ])
+
 
 @app.callback(
     Output('graph_subject', 'figure'),
