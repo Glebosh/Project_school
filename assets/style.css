@@ -1,20 +1,7 @@
-.column {
-    float: left;
-    width: 50%;
-}
-
-.column.invisible {
-    float: left;
-    width: 50%;
+.invisible {
     display: none;
 }
-  
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

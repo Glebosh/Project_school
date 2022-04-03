@@ -26,20 +26,21 @@ dropdown = dcc.Dropdown(
 
 div = [dropdown, html.P('', id='mark_text'), dcc.Graph(id='graph_subject'), dcc.Graph(id='graph_trend')]
 figures_html = html.Div(
-    className="row",
+    id="figures_row_div",
+    className="invisible",
     children=[
         html.Div(
-            id="graph_months_div",
-            className="column invisible",
+            className="five columns",
             children=dcc.Graph(
                 id='graph_months',
-                figure=fig_one)
+                figure=fig_one),
+            style={'margin-left': '8.66666666667%'}
         ),
         html.Div(
-            id="graph_dropdown_div",
-            className="column invisible",
-            children=div 
-        ),  
+            className="five columns",
+            children=div,
+            style={'margin-right': '8.66666666667%'}
+        ),
     ],
     style={
         'margin-top': '50px'
@@ -117,29 +118,26 @@ def update_figure(value):
               Output('graph_months', 'figure'),
               Output('dropdown', 'options'),
               Output('dropdown', 'value'),
-              Output('graph_months_div', 'className'),
-              Output('graph_dropdown_div', 'className'),
+              Output('figures_row_div', 'className'),
               Input('upload-data', 'contents'),
               State('upload-data', 'filename'),
               State('upload-data', 'last_modified'),
               Input('output-data-upload', 'children'),
-              Input('graph_months_div', 'className'),
-              Input('graph_dropdown_div', 'className'),
+              Input('figures_row_div', 'className'),
 )
-def update_output(list_of_contents, list_of_names, list_of_dates, output_div, fff, ggg):
+def update_output(list_of_contents, list_of_names, list_of_dates, output_div, figures_row_classname):
     
     if list_of_contents is not None:
         global df
         output_div, df = parse_contents(list_of_contents[-1], list_of_names[-1], list_of_dates[-1])
         output_div = html.Div([''])
-        fff = 'column'
-        ggg = 'column'
+        figures_row_classname = 'row'
 
     all_subj = func.get_subjects(df)
     options = [{'label': i, 'value': i} for i in all_subj]
     fig_months = func.plot_marks(df)
 
-    return output_div, fig_months, options, all_subj[0], fff, ggg
+    return output_div, fig_months, options, all_subj[0], figures_row_classname
 
 if __name__ == '__main__':
     app.run_server(debug=True)
