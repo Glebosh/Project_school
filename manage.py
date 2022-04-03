@@ -46,10 +46,19 @@ figures_html = html.Div(
 
 file_upload_html = html.Div([
     html.H1(
-        children='Hello, Gleb!',
+        children='Hello, User!',
         style={
             'textAlign': 'center',
-            'color': '#7FDBFF'
+            'margin': '1em 0 0.5em 0',
+            'font-weight': 600,
+            'font-family': 'Titillium Web',
+            'position': 'relative',
+            'font-size': '36px',
+            'line-height': '40px',
+            'padding': '15px 15px 15px 15%',
+            'color': 'white',
+            'border-radius': '0 10px 0 10px',
+            'background': 'black'
         }
     ),
     dcc.Upload(
