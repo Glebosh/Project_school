@@ -29,13 +29,15 @@ figures_html = html.Div(
     className="row",
     children=[
         html.Div(
-            className="column",
+            id="graph_months_div",
+            className="column invisible",
             children=dcc.Graph(
                 id='graph_months',
                 figure=fig_one)
         ),
         html.Div(
-            className="column",
+            id="graph_dropdown_div",
+            className="column invisible",
             children=div 
         ),  
     ],
@@ -44,43 +46,27 @@ figures_html = html.Div(
     }
 )
 
-file_upload_html = html.Div([
-    html.H1(
-        children='Hello, User!',
-        style={
-            'textAlign': 'center',
-            'margin': '1em 0 0.5em 0',
-            'font-weight': 600,
-            'font-family': 'Titillium Web',
-            'position': 'relative',
-            'font-size': '36px',
-            'line-height': '40px',
-            'padding': '15px 15px 15px 15%',
-            'color': 'white',
-            'border-radius': '0 10px 0 10px',
-            'background': 'black'
-        }
-    ),
-    dcc.Upload(
-        id='upload-data',
-        children=html.Div([
-            'Drag and Drop or ',
-            html.A('Select Files')
-        ]),
-        style={
-            'width': '50%',
-            'height': '60px',
-            'lineHeight': '60px',
-            'borderWidth': '1px',
-            'borderStyle': 'dashed',
-            'borderRadius': '5px',
-            'textAlign': 'center',
-            'margin': 'auto'
-        },
-        # Allow multiple files to be uploaded
-        multiple=True
-    ),
-    html.Div(id='output-data-upload'),
+text = """
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged. It was popularised in the 1960s
+with the release of Letraset sheets containing Lorem Ipsum passages,
+and more recently with desktop publishing software like Aldus PageMaker
+including versions of Lorem Ipsum.
+"""
+
+file_upload_html = html.Div(className='container', children=[
+    html.Div(className='section', children=[
+        html.H5(id='output-data-upload', children=text),
+        dcc.Upload(
+            id='upload-data',
+            children=html.Button(className='button button-primary', children='Загрузить файл'),
+            # Allow multiple files to be uploaded
+            multiple=True
+        ),
+    ])
  ])
 
 app.layout = html.Div(children=[file_upload_html, figures_html])
@@ -131,20 +117,29 @@ def update_figure(value):
               Output('graph_months', 'figure'),
               Output('dropdown', 'options'),
               Output('dropdown', 'value'),
+              Output('graph_months_div', 'className'),
+              Output('graph_dropdown_div', 'className'),
               Input('upload-data', 'contents'),
               State('upload-data', 'filename'),
-              State('upload-data', 'last_modified'))
-def update_output(list_of_contents, list_of_names, list_of_dates):
-    output_div = html.Div([''])
-
+              State('upload-data', 'last_modified'),
+              Input('output-data-upload', 'children'),
+              Input('graph_months_div', 'className'),
+              Input('graph_dropdown_div', 'className'),
+)
+def update_output(list_of_contents, list_of_names, list_of_dates, output_div, fff, ggg):
+    
     if list_of_contents is not None:
         global df
         output_div, df = parse_contents(list_of_contents[-1], list_of_names[-1], list_of_dates[-1])
+        output_div = html.Div([''])
+        fff = 'column'
+        ggg = 'column'
 
     all_subj = func.get_subjects(df)
     options = [{'label': i, 'value': i} for i in all_subj]
     fig_months = func.plot_marks(df)
-    return output_div, fig_months, options, all_subj[0]
+
+    return output_div, fig_months, options, all_subj[0], fff, ggg
 
 if __name__ == '__main__':
     app.run_server(debug=True)
