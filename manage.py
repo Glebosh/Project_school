@@ -26,17 +26,20 @@ dropdown = dcc.Dropdown(
 
 div = [dropdown, html.P('', id='mark_text'), dcc.Graph(id='graph_subject'), dcc.Graph(id='graph_trend')]
 figures_html = html.Div(
-    className="row",
+    id='figures_row_div',
+    className="invisible",
     children=[
         html.Div(
-            className="column",
+            className="five columns",
             children=dcc.Graph(
                 id='graph_months',
-                figure=fig_one)
+                figure=fig_one),
+            style={'margin-left': '8.66666666667%'}
         ),
         html.Div(
-            className="column",
-            children=div 
+            className="five columns",
+            children=div,
+            style={'margin-right': '8.66666666667%'}
         ),  
     ],
     style={
@@ -44,43 +47,20 @@ figures_html = html.Div(
     }
 )
 
-file_upload_html = html.Div([
-    html.H1(
-        children='Hello, User!',
-        style={
-            'textAlign': 'center',
-            'margin': '1em 0 0.5em 0',
-            'font-weight': 600,
-            'font-family': 'Titillium Web',
-            'position': 'relative',
-            'font-size': '36px',
-            'line-height': '40px',
-            'padding': '15px 15px 15px 15%',
-            'color': 'white',
-            'border-radius': '0 10px 0 10px',
-            'background': 'black'
-        }
-    ),
+text = 'Загрузите свой файл с оценками с сайта sgo.'
+
+file_upload_html = html.Div(className='section', children=[
+    html.Div(className='section-heading', children=html.H5(
+        id='output-data-upload',
+        children=text,
+        )),
+
     dcc.Upload(
         id='upload-data',
-        children=html.Div([
-            'Drag and Drop or ',
-            html.A('Select Files')
-        ]),
-        style={
-            'width': '50%',
-            'height': '60px',
-            'lineHeight': '60px',
-            'borderWidth': '1px',
-            'borderStyle': 'dashed',
-            'borderRadius': '5px',
-            'textAlign': 'center',
-            'margin': 'auto'
-        },
+        children=html.Button('Upload File', className='button button-primary'),
         # Allow multiple files to be uploaded
         multiple=True
     ),
-    html.Div(id='output-data-upload'),
  ])
 
 app.layout = html.Div(children=[file_upload_html, figures_html])
@@ -131,20 +111,26 @@ def update_figure(value):
               Output('graph_months', 'figure'),
               Output('dropdown', 'options'),
               Output('dropdown', 'value'),
+              Output('figures_row_div', 'className'),
               Input('upload-data', 'contents'),
               State('upload-data', 'filename'),
-              State('upload-data', 'last_modified'))
-def update_output(list_of_contents, list_of_names, list_of_dates):
-    output_div = html.Div([''])
+              State('upload-data', 'last_modified'),
+              Input('output-data-upload', 'children'),
+              Input('figures_row_div', 'className'))
+def update_output(list_of_contents, list_of_names, list_of_dates, output_div, figures_row_classname):
 
     if list_of_contents is not None:
         global df
         output_div, df = parse_contents(list_of_contents[-1], list_of_names[-1], list_of_dates[-1])
+        output_div = html.Div([''])
+        figures_row_classname = 'row'
+
 
     all_subj = func.get_subjects(df)
     options = [{'label': i, 'value': i} for i in all_subj]
     fig_months = func.plot_marks(df)
-    return output_div, fig_months, options, all_subj[0]
+
+    return output_div, fig_months, options, all_subj[0], figures_row_classname
 
 if __name__ == '__main__':
     app.run_server(debug=True)
